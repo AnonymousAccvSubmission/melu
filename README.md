@@ -3,10 +3,10 @@ Official repository of the paper "CleftLipGAN : Interactive GAN-Inpainting for P
 
 <p class="lead"> <b>Abstract:</b> Synthetic generation of post-surgical outcomes holds significant value in the clinical domain, particularly for Cleft lip and palate surgery. These generated images can be utilized for surgical planning, serve as ideal reference images to evaluate surgical success, and assist in educating patients about potential outcomes. Image inpainting is effective for selectively generating Cleft-affected regions, making it a promising technique for this task. Due to the lack of publicly available Cleft-specific datasets, Cleft inpainting models are typically trained on healthy data and applied to Cleft conditions to generate normal lip appearances. However, existing methods often struggle to capture the complexities of Cleft deformities, leading to implausible outcomes that fail to reflect the unique structural characteristics of Cleft-affected regions. To address this, we propose a Structural Guided Pluralistic Inpainting model, trained on healthy images, which allows for real-time, interactive adjustments to synthesize Cleft-specific images. We demonstrate the model’s effectiveness by generating images that closely resemble Cleft conditions and benchmarking it against existing methods. Additionally, we provide a user-friendly interface designed as a tool for post-surgical visualization of Cleft conditions. </p>
 
-![Visual Abstract](media/our_model.png)
+![Visual Abstract](media/Our_model.png)
 
 ## Demo
-![Demo GIF](media/UI.gif)
+<img src="media/demo.gif" alt="Demo GIF" width="800"/>
 
 ## Installation
 
