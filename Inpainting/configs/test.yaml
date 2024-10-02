@@ -1,0 +1,57 @@
+out_dir: "./results/celeba_V3"
+seed: 42
+
+models:
+    generator:
+            name: "AGGV3"
+            config:
+                embed: 4
+            
+
+    discrimnator:
+
+
+
+
+train:
+    name: "inpainting"
+    batch_size: 16
+    num_work: 4
+    config:
+        data_root: "/mnt/recsys/daniel/datasets/journalpaper/ffhq_65k/benchmark_fullface/imgs"
+        prior_root: "/mnt/recsys/daniel/datasets/journalpaper/ffhq_65k/benchmark_fullface/canny_edges"
+        mask_root: "/mnt/recsys/daniel/datasets/journalpaper/ffhq_65k/benchmark_fullface/mask"
+        mask_config:
+                  mask_mode: "external"
+                  root:
+        data_len: -1
+        image_size: [256, 256]
+        is_train: True
+
+val:
+    name: "inpainting"
+    batch_size: 1
+    num_work: 2
+    config:
+        data_root: "/mnt/recsys/daniel/datasets/journalpaper/ffhq_65k/benchmark_fullface/imgs"
+        prior_root: "/mnt/recsys/daniel/datasets/journalpaper/ffhq_65k/benchmark_fullface/canny_edges"
+        mask_root: "/mnt/recsys/daniel/datasets/journalpaper/ffhq_65k/benchmark_fullface/mask"
+        mask_config:
+                  mask_mode: "external"
+                  root:
+        data_len: 400
+        image_size: [256, 256]
+        is_train: False
+
+
+optim:
+    lr_g: 0.00005
+    lr_d: 0.000005
+    b1: 0.5
+    b2: 0.9
+  
+eval_inter: 1
+resume: 0
+epoch: 150
+save_model: 10
+sample_inter: 1
