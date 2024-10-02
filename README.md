@@ -6,7 +6,7 @@ Official repository of the paper "CleftLipGAN : Interactive GAN-Inpainting for P
 ![Visual Abstract](media/Our_model.png)
 
 ## Demo
-<img src="media/demo.gif" alt="Demo GIF" width="800"/>
+<img src="media/UI.gif" alt="Demo GIF" width="800"/>
 
 ## Installation
 
